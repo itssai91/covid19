@@ -29,7 +29,7 @@ $coranalive = json_decode($data, true);
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <meta http-equiv="refresh" content="30" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <title>COVID-19 ODISHA LIVE TRACKER</title>
+  <title>COVID-19 GUJURAT LIVE TRACKER</title>
   <style>
     html {
       scroll-behavior: smooth;
@@ -40,7 +40,7 @@ $coranalive = json_decode($data, true);
 
   <!--Corona Data-->
   <section class="corona_data container-fluid">
-    <h1 class="text-danger text-center">COVID- 19 ODISHA LIVE TRACKER</h1>
+    <h1 class="text-danger text-center">COVID- 19 GUJURAT LIVE TRACKER</h1>
 
     <div class="btn-group" role="group" aria-label="Basic example">
       <a class="btn btn-lg bg-primary text-white" href="world.php">GLOBAL</a>
@@ -68,7 +68,7 @@ $coranalive = json_decode($data, true);
         <?php
 
 
-        $statescount = count($coranalive[23]['districtData']);
+        $statescount = count($coranalive[10]['districtData']);
 
 
 
@@ -79,11 +79,11 @@ $coranalive = json_decode($data, true);
 
           <tr>
 
-            <td style="background: #ffe493"><?php echo $coranalive[23]['districtData'][$i]['district'] . "<br>"; ?></td>
-            <td style="background: #9ED9CCFF;"><?php echo $coranalive[23]['districtData'][$i]['confirmed'] . "<br>";  ?></td>
-            <td style="background: #fc95c6;"><?php echo $coranalive[23]['districtData'][$i]['active'] . "<br>"; ?></td>
-            <td style="background: #88d28b;"><?php echo $coranalive[23]['districtData'][$i]['recovered'] . "<br>"; ?></td>
-            <td style="background: #fd99a1;"><?php echo $coranalive[23]['districtData'][$i]['deceased'] . "<br>";  ?></td>
+            <td style="background: #ffe493"><?php echo $coranalive[10]['districtData'][$i]['district'] . "<br>"; ?></td>
+            <td style="background: #9ED9CCFF;"><?php echo $coranalive[10]['districtData'][$i]['confirmed'] . "<br>";  ?></td>
+            <td style="background: #fc95c6;"><?php echo $coranalive[10]['districtData'][$i]['active'] . "<br>"; ?></td>
+            <td style="background: #88d28b;"><?php echo $coranalive[10]['districtData'][$i]['recovered'] . "<br>"; ?></td>
+            <td style="background: #fd99a1;"><?php echo $coranalive[10]['districtData'][$i]['deceased'] . "<br>";  ?></td>
 
           </tr>
 
