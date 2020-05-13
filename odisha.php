@@ -68,7 +68,7 @@ $coranalive = json_decode($data, true);
         <?php
 
 
-        $statescount = count($coranalive[23]['districtData']);
+        $statescount = count($coranalive[25]['districtData']);
 
 
 
@@ -79,11 +79,11 @@ $coranalive = json_decode($data, true);
 
           <tr>
 
-            <td style="background: #ffe493"><?php echo $coranalive[23]['districtData'][$i]['district'] . "<br>"; ?></td>
-            <td style="background: #9ED9CCFF;"><?php echo $coranalive[23]['districtData'][$i]['confirmed'] . "<br>";  ?></td>
-            <td style="background: #fc95c6;"><?php echo $coranalive[23]['districtData'][$i]['active'] . "<br>"; ?></td>
-            <td style="background: #88d28b;"><?php echo $coranalive[23]['districtData'][$i]['recovered'] . "<br>"; ?></td>
-            <td style="background: #fd99a1;"><?php echo $coranalive[23]['districtData'][$i]['deceased'] . "<br>";  ?></td>
+            <td style="background: #ffe493"><?php echo $coranalive[25]['districtData'][$i]['district'] . "<br>"; ?></td>
+            <td style="background: #9ED9CCFF;"><?php echo $coranalive[25]['districtData'][$i]['confirmed'] . "<br>";  ?></td>
+            <td style="background: #fc95c6;"><?php echo $coranalive[25]['districtData'][$i]['active'] . "<br>"; ?></td>
+            <td style="background: #88d28b;"><?php echo $coranalive[25]['districtData'][$i]['recovered'] . "<br>"; ?></td>
+            <td style="background: #fd99a1;"><?php echo $coranalive[25]['districtData'][$i]['deceased'] . "<br>";  ?></td>
 
           </tr>
 
